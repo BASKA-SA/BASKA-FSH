@@ -6,26 +6,6 @@
         <title>Karate Kata Videos</title>
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="https://walkman100.github.io/embed/main.css" type="text/css">
-        <script type="text/javascript" src="https://walkman100.github.io/embed/jwplayer.js"></script>
-
-        <!-- JQuery tabs: https://jqueryui.com/tabs -->
-        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <link rel="stylesheet" href="https://resources/demos/style.css">
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script>
-        $( function() {
-            $( "#tabs" ).tabs({
-                collapsible: true,
-                active: false,
-                beforeLoad: function( event, ui ) {
-                    ui.jqXHR.fail(function() {
-                        ui.panel.html("Couldn't load this tab. We'll try to fix this as soon as possible.");
-                    });
-                }
-            });
-        } );
-        </script>
     </head>
     <body>
         <div class="main">
@@ -38,36 +18,11 @@
             <INPUT id="btns" type="button" value="Back" onClick="history.go(-1);return true;">
             <INPUT type="button" value="Close" onClick="javascript:window.open('','_self').close();">
             <INPUT type=button value="View source on GitHub" onClick="javascript:window.open('https://github.com/Walkman100/BASKA-FSH/blob/gh-pages/videos.html')">
-            <h3><a id="htabs" href="#htabs" class="noLink">Tabs</a></h3>
-                <div id="tabs" style="text-align: center;">
-                    <ul>
-                        <li><a href="#youtube">YouTube player</a></li>
-                        <li><a href="#jwplayer">JWPlayer</a></li>
-                        <li><a href="embedded/test.html">Embedded media</a></li>
-                    </ul>
-                    <div id="youtube">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Sm0t5YXNMj4" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div id="jwplayer" style="width:65%; margin: 0 auto;">
-                        <div class="noBorder" id="myElement">
-                            <img src="https://walkman100.github.io/images/gif/loading1.gif" />&nbsp;Loading the player...
-                        </div>
-                        <script type="text/javascript">
-                            jwplayer("myElement").setup({
-                                file: "https://walkman100.github.io/Walkman/Media/I%20CAN'T%20SHIT%20ANY%20FASTER%20IF%20YOU%20KEEP%20KNOCKING.mp3",
-                            });
-                        </script>
-                    </div>
-                </div>
-            <h3><a id="iframe" href="#iframe" class="noLink">Inline Frame</a></h3>
-                <center>
-                    <a target="player" href="https://www.youtube.com/embed/Sm0t5YXNMj4">YouTube player</a> |
-                    <a target="player" href="embedded/test2.html">JWPlayer</a> |
-                    <a target="player" href="https://walkman100.github.io/Walkman/Media/I%20CAN'T%20SHIT%20ANY%20FASTER%20IF%20YOU%20KEEP%20KNOCKING.wav">Embedded media</a>
-                    <br><br>
-                    <iframe src="about:blank" name="player" width=560 height=315 frameborder=0 scrolling=no seamless></iframe>
-                </center>
-            <br>
+            
+            <h3><a id="wanshu" href="#wanshu" class="noLink">Wanshu</a> (<a href="https://drive.google.com/file/d/0B5dJ8srqv03tbnNaRXN3YXJuTWM/view">Link</a>)</h3>
+                <iframe width="100%" height="480" src="https://drive.google.com/file/d/0B5dJ8srqv03tbnNaRXN3YXJuTWM/preview" frameborder="0" allowfullscreen></iframe>
+            <h3><a id="seinchin" href="#seinchin" class="noLink">Seinchin</a> (<a href="https://drive.google.com/file/d/0B5dJ8srqv03tTHVpbEVZcHBsclE/view">Link</a>)</h3>
+                <iframe width="100%" height="480" src="https://drive.google.com/file/d/0B5dJ8srqv03tTHVpbEVZcHBsclE/preview" frameborder="0" allowfullscreen></iframe>
             <br>
         </div>
     </body>
